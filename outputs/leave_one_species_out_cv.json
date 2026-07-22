@@ -1,0 +1,512 @@
+{
+  "germination_percent": {
+    "random_forest": {
+      "per_species": [
+        {
+          "held_out_species": "acmella oleracea",
+          "n_held_out": 12,
+          "rmse": 9.474115824773559,
+          "mae": 8.416441394681565,
+          "r2": 0.753182696863018
+        },
+        {
+          "held_out_species": "ageratina adenophora",
+          "n_held_out": 12,
+          "rmse": 16.150028018581637,
+          "mae": 12.811380434362645,
+          "r2": 0.00840101736416643
+        },
+        {
+          "held_out_species": "azadirachta indica",
+          "n_held_out": 2,
+          "rmse": 44.55978237777368,
+          "mae": 33.00190430080393,
+          "r2": -68.41458544334066
+        },
+        {
+          "held_out_species": "chromolaena odorata",
+          "n_held_out": 22,
+          "rmse": 14.914873459826556,
+          "mae": 12.465995950394188,
+          "r2": 0.6064626492651063
+        },
+        {
+          "held_out_species": "dalbergia sissoo",
+          "n_held_out": 2,
+          "rmse": 46.61518232579827,
+          "mae": 41.5842249027313,
+          "r2": -0.2770469631690964
+        },
+        {
+          "held_out_species": "eucalyptus globulus",
+          "n_held_out": 22,
+          "rmse": 7.099654668651032,
+          "mae": 5.895979048637142,
+          "r2": 0.8536558332744273
+        },
+        {
+          "held_out_species": "lantana camara",
+          "n_held_out": 153,
+          "rmse": 13.241914329539169,
+          "mae": 9.253958190454181,
+          "r2": 0.6811829340898238
+        },
+        {
+          "held_out_species": "melilotus indica",
+          "n_held_out": 2,
+          "rmse": 51.477191493349984,
+          "mae": 50.602972315419784,
+          "r2": -70.51009386458419
+        },
+        {
+          "held_out_species": "parthenium hysterophorus",
+          "n_held_out": 36,
+          "rmse": 10.64246834724496,
+          "mae": 8.44436679956688,
+          "r2": 0.7604280860075878
+        },
+        {
+          "held_out_species": "phaseolus vulgaris l.",
+          "n_held_out": 2,
+          "rmse": 29.165312063824327,
+          "mae": 24.627589948267623,
+          "r2": 0.37925740319508083
+        },
+        {
+          "held_out_species": "tomato",
+          "n_held_out": 2,
+          "rmse": 19.503880713491732,
+          "mae": 18.591720953875424,
+          "r2": -1354.8009776930598
+        }
+      ],
+      "mean_rmse": 23.894945783895903,
+      "std_rmse": 15.582233295982526,
+      "n_species_evaluated": 11
+    },
+    "xgboost": {
+      "per_species": [
+        {
+          "held_out_species": "acmella oleracea",
+          "n_held_out": 12,
+          "rmse": 19.273840593649854,
+          "mae": 18.321589515326757,
+          "r2": -0.02149147975487975
+        },
+        {
+          "held_out_species": "ageratina adenophora",
+          "n_held_out": 12,
+          "rmse": 17.73314049406601,
+          "mae": 12.015449607562848,
+          "r2": -0.19553094544359895
+        },
+        {
+          "held_out_species": "azadirachta indica",
+          "n_held_out": 2,
+          "rmse": 57.866707741130135,
+          "mae": 46.18951893322552,
+          "r2": -116.06367686412351
+        },
+        {
+          "held_out_species": "chromolaena odorata",
+          "n_held_out": 22,
+          "rmse": 19.29762298912202,
+          "mae": 15.861180194254858,
+          "r2": 0.3411987015562651
+        },
+        {
+          "held_out_species": "dalbergia sissoo",
+          "n_held_out": 2,
+          "rmse": 51.94811244949049,
+          "mae": 41.034629821777344,
+          "r2": -0.5859578399646845
+        },
+        {
+          "held_out_species": "eucalyptus globulus",
+          "n_held_out": 22,
+          "rmse": 12.60348135197764,
+          "mae": 11.633613185193058,
+          "r2": 0.5388077372969653
+        },
+        {
+          "held_out_species": "lantana camara",
+          "n_held_out": 153,
+          "rmse": 15.02636557598196,
+          "mae": 10.917249110737322,
+          "r2": 0.5894671500787045
+        },
+        {
+          "held_out_species": "melilotus indica",
+          "n_held_out": 2,
+          "rmse": 44.18616445336898,
+          "mae": 42.96351595161322,
+          "r2": -51.68782467974425
+        },
+        {
+          "held_out_species": "parthenium hysterophorus",
+          "n_held_out": 36,
+          "rmse": 15.363502971109,
+          "mae": 13.36283469342918,
+          "r2": 0.5007343746889276
+        },
+        {
+          "held_out_species": "phaseolus vulgaris l.",
+          "n_held_out": 2,
+          "rmse": 36.02583137019377,
+          "mae": 36.024870752712935,
+          "r2": 0.052877144200641935
+        },
+        {
+          "held_out_species": "tomato",
+          "n_held_out": 2,
+          "rmse": 28.14274132182677,
+          "mae": 22.239839427076546,
+          "r2": -2821.8426866061995
+        }
+      ],
+      "mean_rmse": 28.860682846537873,
+      "std_rmse": 15.392278826288841,
+      "n_species_evaluated": 11
+    }
+  },
+  "root_length_mm": {
+    "random_forest": {
+      "per_species": [
+        {
+          "held_out_species": "acmella oleracea",
+          "n_held_out": 12,
+          "rmse": 7.289364852709628,
+          "mae": 6.488874861133251,
+          "r2": 0.8402194937520302
+        },
+        {
+          "held_out_species": "ageratina adenophora",
+          "n_held_out": 12,
+          "rmse": 17.900956405835355,
+          "mae": 15.414492932199858,
+          "r2": 0.007695119536542894
+        },
+        {
+          "held_out_species": "azadirachta indica",
+          "n_held_out": 2,
+          "rmse": 44.813737726153384,
+          "mae": 33.18117747233586,
+          "r2": -172.3798785393027
+        },
+        {
+          "held_out_species": "chromolaena odorata",
+          "n_held_out": 22,
+          "rmse": 7.732241405768251,
+          "mae": 6.515851294192692,
+          "r2": 0.87626079216804
+        },
+        {
+          "held_out_species": "dalbergia sissoo",
+          "n_held_out": 2,
+          "rmse": 52.38814111815224,
+          "mae": 44.09710616029763,
+          "r2": -4.096376947968911
+        },
+        {
+          "held_out_species": "eucalyptus globulus",
+          "n_held_out": 22,
+          "rmse": 19.515740003871677,
+          "mae": 16.974105159627793,
+          "r2": -0.26552152758460457
+        },
+        {
+          "held_out_species": "lantana camara",
+          "n_held_out": 153,
+          "rmse": 11.218405928530508,
+          "mae": 7.787288461663995,
+          "r2": 0.745827217384324
+        },
+        {
+          "held_out_species": "melilotus indica",
+          "n_held_out": 2,
+          "rmse": 9.566676602996976,
+          "mae": 8.749074208518424,
+          "r2": 0.9014111664420856
+        },
+        {
+          "held_out_species": "parthenium hysterophorus",
+          "n_held_out": 36,
+          "rmse": 11.586701826923075,
+          "mae": 8.897932920783141,
+          "r2": 0.617387909102443
+        },
+        {
+          "held_out_species": "phaseolus vulgaris l.",
+          "n_held_out": 2,
+          "rmse": 2.5136512330615397,
+          "mae": 2.060452651184704,
+          "r2": 0.9488181512241802
+        },
+        {
+          "held_out_species": "tomato",
+          "n_held_out": 2,
+          "rmse": 117.30532852756991,
+          "mae": 89.13845236105095,
+          "r2": -1.5980953252487025
+        }
+      ],
+      "mean_rmse": 27.43917687559751,
+      "std_rmse": 32.197558625486266,
+      "n_species_evaluated": 11
+    },
+    "xgboost": {
+      "per_species": [
+        {
+          "held_out_species": "acmella oleracea",
+          "n_held_out": 12,
+          "rmse": 6.1899968388233955,
+          "mae": 4.804273033180702,
+          "r2": 0.8847806898927366
+        },
+        {
+          "held_out_species": "ageratina adenophora",
+          "n_held_out": 12,
+          "rmse": 15.090659614005165,
+          "mae": 12.414963108494526,
+          "r2": 0.29480519551926654
+        },
+        {
+          "held_out_species": "azadirachta indica",
+          "n_held_out": 2,
+          "rmse": 71.67246348461347,
+          "mae": 63.66683014431003,
+          "r2": -442.4871311513519
+        },
+        {
+          "held_out_species": "chromolaena odorata",
+          "n_held_out": 22,
+          "rmse": 12.026315655101294,
+          "mae": 10.45593910394124,
+          "r2": 0.7006620917549828
+        },
+        {
+          "held_out_species": "dalbergia sissoo",
+          "n_held_out": 2,
+          "rmse": 60.99643730786115,
+          "mae": 52.888108478718124,
+          "r2": -5.9088299606618815
+        },
+        {
+          "held_out_species": "eucalyptus globulus",
+          "n_held_out": 22,
+          "rmse": 61.445448827956305,
+          "mae": 55.04864088625897,
+          "r2": -11.545238775815553
+        },
+        {
+          "held_out_species": "lantana camara",
+          "n_held_out": 153,
+          "rmse": 15.99797870120351,
+          "mae": 12.813620398870295,
+          "r2": 0.4831113797119371
+        },
+        {
+          "held_out_species": "melilotus indica",
+          "n_held_out": 2,
+          "rmse": 3.533768470567946,
+          "mae": 3.195830221052052,
+          "r2": 0.9865481590050386
+        },
+        {
+          "held_out_species": "parthenium hysterophorus",
+          "n_held_out": 36,
+          "rmse": 28.940082330483957,
+          "mae": 23.78463289385754,
+          "r2": -1.3869237883466812
+        },
+        {
+          "held_out_species": "phaseolus vulgaris l.",
+          "n_held_out": 2,
+          "rmse": 9.92776509405115,
+          "mae": 9.814001992366732,
+          "r2": 0.20162134883461236
+        },
+        {
+          "held_out_species": "tomato",
+          "n_held_out": 2,
+          "rmse": 128.69987556554895,
+          "mae": 97.09542225594565,
+          "r2": -2.1273454404160206
+        }
+      ],
+      "mean_rmse": 37.68370835365602,
+      "std_rmse": 37.16207252051056,
+      "n_species_evaluated": 11
+    }
+  },
+  "shoot_length_mm": {
+    "random_forest": {
+      "per_species": [
+        {
+          "held_out_species": "acmella oleracea",
+          "n_held_out": 12,
+          "rmse": 13.482704634325517,
+          "mae": 11.887891239887466,
+          "r2": 0.6411930159061354
+        },
+        {
+          "held_out_species": "ageratina adenophora",
+          "n_held_out": 12,
+          "rmse": 27.38236993728396,
+          "mae": 23.458441373586357,
+          "r2": -0.4792571509122081
+        },
+        {
+          "held_out_species": "azadirachta indica",
+          "n_held_out": 2,
+          "rmse": 57.52282752050116,
+          "mae": 43.27420545551686,
+          "r2": -197.24700891613838
+        },
+        {
+          "held_out_species": "chromolaena odorata",
+          "n_held_out": 22,
+          "rmse": 12.309120444771809,
+          "mae": 10.223029940139723,
+          "r2": 0.7964201099959338
+        },
+        {
+          "held_out_species": "dalbergia sissoo",
+          "n_held_out": 2,
+          "rmse": 89.85873098486904,
+          "mae": 89.61449272448684,
+          "r2": 0.0
+        },
+        {
+          "held_out_species": "eucalyptus globulus",
+          "n_held_out": 22,
+          "rmse": 38.40620311229355,
+          "mae": 34.203025254750386,
+          "r2": -2.1555150674923387
+        },
+        {
+          "held_out_species": "lantana camara",
+          "n_held_out": 153,
+          "rmse": 13.372327561485188,
+          "mae": 9.44145624608226,
+          "r2": 0.7656561682063583
+        },
+        {
+          "held_out_species": "melilotus indica",
+          "n_held_out": 2,
+          "rmse": 12.03945002941396,
+          "mae": 10.979789165252162,
+          "r2": 0.9004242217598111
+        },
+        {
+          "held_out_species": "parthenium hysterophorus",
+          "n_held_out": 36,
+          "rmse": 18.613329262105623,
+          "mae": 14.97209519849172,
+          "r2": 0.4047858457500183
+        },
+        {
+          "held_out_species": "phaseolus vulgaris l.",
+          "n_held_out": 2,
+          "rmse": 5.311900105129636,
+          "mae": 5.2383656932128195,
+          "r2": 0.8491585152956074
+        },
+        {
+          "held_out_species": "tomato",
+          "n_held_out": 2,
+          "rmse": 222.0810874749975,
+          "mae": 166.2286422835904,
+          "r2": -1.4200977590231254
+        }
+      ],
+      "mean_rmse": 46.39818646065245,
+      "std_rmse": 60.512460069780005,
+      "n_species_evaluated": 11
+    },
+    "xgboost": {
+      "per_species": [
+        {
+          "held_out_species": "acmella oleracea",
+          "n_held_out": 12,
+          "rmse": 12.341423845795807,
+          "mae": 10.222534864392953,
+          "r2": 0.6993664935990545
+        },
+        {
+          "held_out_species": "ageratina adenophora",
+          "n_held_out": 12,
+          "rmse": 40.654744148792794,
+          "mae": 36.39422903041981,
+          "r2": -2.260799343842403
+        },
+        {
+          "held_out_species": "azadirachta indica",
+          "n_held_out": 2,
+          "rmse": 126.39511796097143,
+          "mae": 121.25880120572191,
+          "r2": -956.1649600966174
+        },
+        {
+          "held_out_species": "chromolaena odorata",
+          "n_held_out": 22,
+          "rmse": 28.791299092169407,
+          "mae": 26.8747004345749,
+          "r2": -0.11379010447141891
+        },
+        {
+          "held_out_species": "dalbergia sissoo",
+          "n_held_out": 2,
+          "rmse": 92.09536110696575,
+          "mae": 91.98342895507812,
+          "r2": 0.0
+        },
+        {
+          "held_out_species": "eucalyptus globulus",
+          "n_held_out": 22,
+          "rmse": 123.61149248813791,
+          "mae": 117.59723278749017,
+          "r2": -31.687763701983684
+        },
+        {
+          "held_out_species": "lantana camara",
+          "n_held_out": 153,
+          "rmse": 21.38167817108227,
+          "mae": 17.549735556483128,
+          "r2": 0.4008672067947162
+        },
+        {
+          "held_out_species": "melilotus indica",
+          "n_held_out": 2,
+          "rmse": 41.89036831309608,
+          "mae": 30.187828612762008,
+          "r2": -0.2055043171617692
+        },
+        {
+          "held_out_species": "parthenium hysterophorus",
+          "n_held_out": 36,
+          "rmse": 38.277080614897876,
+          "mae": 29.879614043708095,
+          "r2": -1.51711318206572
+        },
+        {
+          "held_out_species": "phaseolus vulgaris l.",
+          "n_held_out": 2,
+          "rmse": 27.029283204897826,
+          "mae": 26.92187115824601,
+          "r2": -2.9056206431339997
+        },
+        {
+          "held_out_species": "tomato",
+          "n_held_out": 2,
+          "rmse": 230.50323902484269,
+          "mae": 176.52068330413084,
+          "r2": -1.6071368229888092
+        }
+      ],
+      "mean_rmse": 71.17918981560454,
+      "std_rmse": 63.37430796076396,
+      "n_species_evaluated": 11
+    }
+  }
+}

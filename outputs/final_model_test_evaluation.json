@@ -1,0 +1,20 @@
+{
+  "germination_percent": {
+    "r2": 0.5333699095228238,
+    "rmse": 15.275164714395883,
+    "mae": 9.744478129301152,
+    "model_type": "random_forest"
+  },
+  "root_length_mm": {
+    "r2": 0.7413247603172676,
+    "rmse": 11.346084485862038,
+    "mae": 6.755231996189799,
+    "model_type": "random_forest"
+  },
+  "shoot_length_mm": {
+    "r2": 0.7386146016848303,
+    "rmse": 13.9370377621248,
+    "mae": 8.481261140622934,
+    "model_type": "random_forest"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "germination_percent": {
+    "random_forest": {
+      "best_cv_rmse": 13.489765853689278,
+      "best_params": {
+        "n_estimators": 200,
+        "max_depth": 3,
+        "min_samples_split": 2,
+        "min_samples_leaf": 4,
+        "max_features": "sqrt",
+        "bootstrap": false
+      },
+      "model_path": "models/random_forest_germination_percent_tuned.pkl"
+    },
+    "xgboost": {
+      "best_cv_rmse": 13.960012164912769,
+      "best_params": {
+        "n_estimators": 50,
+        "max_depth": 3,
+        "learning_rate": 0.05,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_alpha": 0,
+        "reg_lambda": 0.1,
+        "min_child_weight": 1
+      },
+      "model_path": "models/xgboost_germination_percent_tuned.pkl"
+    },
+    "selected_model": "random_forest"
+  },
+  "root_length_mm": {
+    "random_forest": {
+      "best_cv_rmse": 12.731765280135614,
+      "best_params": {
+        "n_estimators": 200,
+        "max_depth": null,
+        "min_samples_split": 2,
+        "min_samples_leaf": 4,
+        "max_features": "sqrt",
+        "bootstrap": true
+      },
+      "model_path": "models/random_forest_root_length_mm_tuned.pkl"
+    },
+    "xgboost": {
+      "best_cv_rmse": 12.914466822042062,
+      "best_params": {
+        "n_estimators": 500,
+        "max_depth": 3,
+        "learning_rate": 0.01,
+        "subsample": 0.6,
+        "colsample_bytree": 1.0,
+        "reg_alpha": 1.0,
+        "reg_lambda": 10.0,
+        "min_child_weight": 1
+      },
+      "model_path": "models/xgboost_root_length_mm_tuned.pkl"
+    },
+    "selected_model": "random_forest"
+  },
+  "shoot_length_mm": {
+    "random_forest": {
+      "best_cv_rmse": 19.400004277227715,
+      "best_params": {
+        "n_estimators": 200,
+        "max_depth": 10,
+        "min_samples_split": 5,
+        "min_samples_leaf": 4,
+        "max_features": "sqrt",
+        "bootstrap": true
+      },
+      "model_path": "models/random_forest_shoot_length_mm_tuned.pkl"
+    },
+    "xgboost": {
+      "best_cv_rmse": 19.63600484284634,
+      "best_params": {
+        "n_estimators": 50,
+        "max_depth": 3,
+        "learning_rate": 0.05,
+        "subsample": 1.0,
+        "colsample_bytree": 0.8,
+        "reg_alpha": 0,
+        "reg_lambda": 10.0,
+        "min_child_weight": 3
+      },
+      "model_path": "models/xgboost_shoot_length_mm_tuned.pkl"
+    },
+    "selected_model": "random_forest"
+  }
+}

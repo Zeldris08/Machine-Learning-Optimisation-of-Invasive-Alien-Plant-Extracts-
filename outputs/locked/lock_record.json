@@ -1,0 +1,13 @@
+{
+  "lock_hash": "f0e350921adbd66bc6f9693e6c9deae1d4c59aed361368a9cd518b73cf01191d",
+  "lock_timestamp_utc": "2026-07-18T20:57:45+00:00",
+  "artifact_manifest_hashes": {
+    "matrix_features": "1023564051d54534063ad176cfe187a7494546a985e9c3d54267e1b299a57cc5",
+    "matrix_full": "ae80acaab129eac8561068a89a6ed161e5e3c7e21b598db7eb0e152239784d08",
+    "predictions_point": "4534a7473ac6f7b6fb1274ff9a2ac9134c72cb6813952756d02950f35b222c77",
+    "predictions_interval": "c376fa3a74fcb2e01d6dd2ded08394748f8c6fe5937546a3d4a5ce519fe5a012",
+    "model_binary_germination_percent": "3892ccab24cd4e6c36764f4f7470bf5fb159e96c591d449f09e382099675a464",
+    "model_binary_root_length_mm": "d74886114dc99d9a117ff8e2369986776893b8e8023cf0ae0a97c5e7c1e4c08b",
+    "model_binary_shoot_length_mm": "840a433daf54fcf1899a3016cee026c2546c58ee5f722c910bbdfb48300b0766"
+  }
+}

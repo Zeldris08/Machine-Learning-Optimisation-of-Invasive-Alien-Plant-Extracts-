@@ -1,0 +1,57 @@
+{
+  "general_literature_corpus": {
+    "n_reference_rows": 224,
+    "leverage_threshold": 0.9508928571428571,
+    "knn_distance_threshold": 12437.362713597606,
+    "per_concentration": [
+      {
+        "concentration_mg_per_ml": 0.0,
+        "leverage": 4.4893890541069945,
+        "outside_leverage_domain": true,
+        "mean_knn_distance": 1146.6561342094133,
+        "outside_knn_domain": false
+      },
+      {
+        "concentration_mg_per_ml": 1.0,
+        "leverage": 4.058542516266319,
+        "outside_leverage_domain": true,
+        "mean_knn_distance": 1146.0349050501613,
+        "outside_knn_domain": false
+      },
+      {
+        "concentration_mg_per_ml": 2.5,
+        "leverage": 3.5519679250908833,
+        "outside_leverage_domain": true,
+        "mean_knn_distance": 1137.679440940084,
+        "outside_knn_domain": false
+      },
+      {
+        "concentration_mg_per_ml": 5.0,
+        "leverage": 2.7323344865564336,
+        "outside_leverage_domain": true,
+        "mean_knn_distance": 1065.1668788084044,
+        "outside_knn_domain": false
+      },
+      {
+        "concentration_mg_per_ml": 10.0,
+        "leverage": 1.4564024155346929,
+        "outside_leverage_domain": true,
+        "mean_knn_distance": 587.5575723233087,
+        "outside_knn_domain": false
+      },
+      {
+        "concentration_mg_per_ml": 25.0,
+        "leverage": 0.14716405853932563,
+        "outside_leverage_domain": false,
+        "mean_knn_distance": 520.7961124373602,
+        "outside_knn_domain": false
+      }
+    ],
+    "n_outside_leverage_domain": 5,
+    "n_outside_knn_domain": 0
+  },
+  "target_pair_lantana_maize": null,
+  "n_target_pair_training_rows": 0,
+  "leverage_threshold": 0.9508928571428571,
+  "knn_distance_threshold": 12437.362713597606
+}
