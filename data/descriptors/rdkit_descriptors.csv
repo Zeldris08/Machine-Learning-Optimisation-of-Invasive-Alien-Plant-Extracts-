@@ -1,0 +1,17 @@
+compound_col,compound_name,smiles,desc_mw,desc_tpsa,desc_logp,desc_hbd,desc_hba,desc_rotatable_bonds,desc_aromatic_rings,desc_heavy_atom_count,desc_fraction_csp3
+compound_lantadene_a,lantadene a,CC1(C)CC2=C(C(=O)O)C(C)(C)CC3(C)C2C(=O)CC4(C)C3CC=C5C6(C)CCC(OC(=O)C(=C)CC)C(C)(C)C6CCC54C)C1,,,,,,,,,
+compound_lantadene_b,lantadene b,CC(=O)OC1CCC2(C)C(CCC3(C)C2CC=C4C5(C)CCC(=O)C(C)(C)C5CCC43C)C1(C)C(=O)O,512.7310000000004,80.67,6.983400000000008,1.0,4.0,2.0,0.0,37.0,0.84375
+compound_lantadene_c,lantadene c,CC1(C)CC2=C(C(=O)O)C(C)(C)CC3(C)C2C(=O)CC4(C)C3CC=C5C6(C)CCC(OC(=O)C(=CC)C)C(C)(C)C6CCC54C)C1,,,,,,,,,
+compound_lantadene_d,lantadene d,CC=C(C)C(=O)OC1CCC2(C)C(CCC3(C)C2CC=C4C5(C)CCC(=O)C(C)(C)C5CCC43C)C1(C)C(=O)O,552.7960000000005,80.67,7.929700000000009,1.0,4.0,3.0,0.0,40.0,0.8
+compound_icterogenin,icterogenin,CC1(C)CC2=C(C(=O)O)C(C)(C)CC3(C)C2C(=O)CC4(C)C3CC=C5C6(C)CCC(O)C(C)(C)C6CCC54C)C1,,,,,,,,,
+compound_luteolin,luteolin,C1=CC(=C(C=C1C2=CC(=O)C3=C(O2)C=C(C=C3O)O)O)O,286.239,111.13000000000001,2.2824000000000018,4.0,6.0,1.0,3.0,21.0,0.0
+compound_hispidulin,hispidulin,COC1=C(C=C(C2=C1OC(=CC2=O)C3=CC=C(C=C3)O)O)O,300.26599999999996,100.13000000000001,2.585400000000002,3.0,6.0,2.0,3.0,22.0,0.0625
+compound_quercetin,quercetin,C1=CC(=C(C=C1C2=C(C(=O)C3=C(O2)C=C(C=C3O)O)O)O)O,302.238,131.36,1.9880000000000009,5.0,7.0,1.0,3.0,22.0,0.0
+compound_kaempferol,kaempferol,C1=CC(=CC=C1C2=C(C(=O)C3=C(O2)C=C(C=C3O)O)O)O,286.239,111.13000000000001,2.282400000000001,4.0,6.0,1.0,3.0,21.0,0.0
+compound_caffeic_acid,caffeic acid,C1=CC(=C(C=C1C=CC(=O)O)O)O,180.159,77.76,1.1955999999999996,3.0,3.0,2.0,1.0,13.0,0.0
+compound_chlorogenic_acid,chlorogenic acid,C1C(C(C(CC1(C(=O)O)O)OC(=O)C=CC2=CC(=C(C=C2)O)O)O)O,354.31100000000004,164.75,-0.6459000000000001,6.0,8.0,4.0,1.0,25.0,0.375
+compound_caryophyllene,caryophyllene,CC1=CCCC2(C)CC(C(=C)C2CC1)C(=C)C,230.39499999999995,0.0,5.281400000000005,0.0,0.0,1.0,0.0,17.0,0.6470588235294118
+compound_alpha_humulene,alpha humulene,CC1=CCC=C(C)CC=C(C)CC1,176.30299999999997,0.0,4.399300000000004,0.0,0.0,0.0,0.0,13.0,0.5384615384615384
+compound_alpha_pinene,alpha pinene,CC1=CC2CC1C2(C)C,122.211,0.0,2.608600000000001,0.0,0.0,0.0,0.0,9.0,0.7777777777777778
+compound_camphene,camphene,CC1(C)C2CCC1(=C)CC2,,,,,,,,,
+compound_linalool,linalool,CC(=CCCC(C)(C=C)O)C,154.25300000000001,20.23,2.6698000000000013,1.0,1.0,4.0,0.0,11.0,0.6

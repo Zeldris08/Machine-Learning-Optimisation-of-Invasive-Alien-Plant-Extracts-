@@ -1,0 +1,12 @@
+{
+  "total_rows": 281,
+  "unique_studies": null,
+  "unique_donor_species": 25,
+  "concentration_range": {
+    "min": 0.0,
+    "max": 105.0987
+  },
+  "germination_percent_coverage": 1.0,
+  "root_length_mm_coverage": 1.0,
+  "shoot_length_mm_coverage": 1.0
+}

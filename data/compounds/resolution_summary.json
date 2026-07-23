@@ -1,0 +1,7 @@
+{
+  "total_compounds": 16,
+  "resolved": 16,
+  "unresolved": 0,
+  "resolution_rate": 1.0,
+  "strategy_applied": "class_mean"
+}

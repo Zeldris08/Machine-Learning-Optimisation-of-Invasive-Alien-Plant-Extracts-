@@ -1,0 +1,45 @@
+RANDOM_SEED: 42
+
+DATA:
+  raw_input_path: C:\Users\rudsi\Desktop\Expo-2026\output\dataset.csv
+  min_data_points: 10
+  test_fraction: 0.20
+  count_synthetic_towards_minimum: true
+
+COMPOUNDS:
+  pubchem_request_delay_seconds: 0.5
+  unknown_compound_strategy: "class_mean"  # Options: class_mean, zero, drop
+
+FEATURES:
+  concentration_column: concentration_mg_per_ml
+  use_log_concentration: true
+  use_squared_concentration: true
+  use_interaction_features: true
+  use_biological_function_features: true
+  use_tanimoto_similarity: true
+  descriptor_aggregation_method: "abundance_weighted"  # Options: mean, weighted_mean, max, abundance_weighted
+
+OSMOTIC:
+  correct_osmotic_confound: true
+  osmolality_proxy_column: total_dissolved_solids_mg_per_ml
+
+MODELS:
+  cv_folds: 5
+  cv_strategy: "kfold"   # Options: kfold, stratified_kfold, leave_one_out, leave_one_species_out
+  hyperparameter_search: "bayesian"   # Options: random_search, bayesian
+  n_search_iterations: 50
+  scoring_metric: "neg_root_mean_squared_error"
+
+UNCERTAINTY:
+  method: "conformal"    # Options: conformal, quantile_regression_forest, bootstrap
+  coverage_level: 0.90
+
+LOCK:
+  experimental_concentrations: [0, 1, 2.5, 5, 10, 25]
+  hash_algorithm: "sha256"
+
+FIGURES:
+  dpi: 300
+  format: "pdf"
+  style: "seaborn-v0_8-whitegrid"
+  color_palette: "colorblind"

@@ -1,0 +1,157 @@
+# Biological function annotations for Lantana camara phytochemicals
+# Each compound can have multiple function labels
+# Used by Module 4 to generate bio_score_* features
+
+compounds:
+  lantadene_a:
+    structural_class: terpenoid
+    functions:
+      - allelopathic
+      - membrane_disruption
+      - enzyme_inhibition
+    known_bioactive: true
+    notes: "Pentacyclic triterpenoid; primary phytotoxic agent in Lantana camara"
+
+  lantadene_b:
+    structural_class: terpenoid
+    functions:
+      - allelopathic
+      - membrane_disruption
+    known_bioactive: true
+    notes: "Triterpenoid; similar activity to lantadene A"
+
+  lantadene_c:
+    structural_class: terpenoid
+    functions:
+      - allelopathic
+    known_bioactive: true
+
+  lantadene_d:
+    structural_class: terpenoid
+    functions:
+      - allelopathic
+    known_bioactive: false
+
+  icterogenin:
+    structural_class: terpenoid
+    functions:
+      - allelopathic
+      - enzyme_inhibition
+    known_bioactive: true
+    notes: "Triterpenoid aglycone; hepatotoxic"
+
+  luteolin:
+    structural_class: flavonoid
+    functions:
+      - antioxidant
+      - ros_scavenger
+      - enzyme_inhibition
+      - auxin_modulation
+    known_bioactive: true
+    notes: "Flavone; potent antioxidant; may modulate auxin oxidase"
+
+  hispidulin:
+    structural_class: flavonoid
+    functions:
+      - antioxidant
+      - ros_scavenger
+      - antimicrobial
+    known_bioactive: true
+
+  quercetin:
+    structural_class: flavonoid
+    functions:
+      - antioxidant
+      - ros_scavenger
+      - enzyme_inhibition
+    known_bioactive: true
+    notes: "Flavonol; broad antioxidant activity"
+
+  kaempferol:
+    structural_class: flavonoid
+    functions:
+      - antioxidant
+      - ros_scavenger
+      - auxin_modulation
+    known_bioactive: true
+
+  caffeic_acid:
+    structural_class: phenolic
+    functions:
+      - antioxidant
+      - ros_scavenger
+      - allelopathic
+    known_bioactive: true
+
+  chlorogenic_acid:
+    structural_class: phenolic
+    functions:
+      - antioxidant
+      - ros_scavenger
+      - allelopathic
+      - enzyme_inhibition
+    known_bioactive: true
+
+  caryophyllene:
+    structural_class: terpenoid
+    functions:
+      - antimicrobial
+      - membrane_disruption
+    known_bioactive: true
+    notes: "Sesquiterpene; beta-caryophyllene; membrane active"
+
+  alpha_humulene:
+    structural_class: terpenoid
+    functions:
+      - antimicrobial
+      - membrane_disruption
+    known_bioactive: true
+
+  alpha_pinene:
+    structural_class: terpenoid
+    functions:
+      - antimicrobial
+      - allelopathic
+    known_bioactive: true
+
+  camphene:
+    structural_class: terpenoid
+    functions:
+      - antimicrobial
+    known_bioactive: false
+
+  linalool:
+    structural_class: terpenoid
+    functions:
+      - antimicrobial
+      - membrane_disruption
+    known_bioactive: true
+
+# Known germination-active compounds for Tanimoto similarity feature (Module 4 §8.6)
+known_germination_regulators:
+  - quercetin        # Gibberellin-like effects reported
+  - kaempferol       # Promotion of seed germination at low doses
+  - caffeic_acid     # Dose-dependent allelopathic inhibition
+  - lantadene_a      # Primary phytotoxic inhibitor
+
+# Structural class groupings (for class-mean imputation in Module 1)
+structural_classes:
+  phenolic:
+    - caffeic_acid
+    - chlorogenic_acid
+  flavonoid:
+    - luteolin
+    - hispidulin
+    - quercetin
+    - kaempferol
+  terpenoid:
+    - lantadene_a
+    - lantadene_b
+    - lantadene_c
+    - lantadene_d
+    - icterogenin
+    - caryophyllene
+    - alpha_humulene
+    - alpha_pinene
+    - camphene
+    - linalool
