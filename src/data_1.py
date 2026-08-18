@@ -11,9 +11,9 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # CONFIG
 
-
-INPUT_DIR = "C:\\Users\\rudsi\\Desktop\\Expo-2026\\cache\\pdfs"
-OUTPUT_DIR = "C:\\Users\\rudsi\\Desktop\\Expo-2026\\data\\raw_literature"  
+SCRIPT_DIR = Path(__file__).parent
+INPUT_DIR = SCRIPT_DIR.parent / "cache" / "pdfs"
+OUTPUT_DIR = SCRIPT_DIR.parent / "data" / "raw_literature"  
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
