@@ -9,9 +9,8 @@ from openai import OpenAI
 from threading import Lock
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-##############################################################################
 # CONFIG
-##############################################################################
+
 
 INPUT_DIR = "C:\\Users\\rudsi\\Desktop\\Expo-2026\\cache\\pdfs"
 OUTPUT_DIR = "C:\\Users\\rudsi\\Desktop\\Expo-2026\\data\\raw_literature"  
@@ -25,16 +24,11 @@ client = OpenAI(
 
 MODEL = "qwen3:4b"
 
-##############################################################################
 # THREAD SAFETY
-##############################################################################
-
 llm_lock = Lock()
 
-##############################################################################
-# RESUME SUPPORT
-##############################################################################
 
+# RESUME SUPPORT
 stream_path = os.path.join(OUTPUT_DIR, "stream.csv")
 citation_path = os.path.join(OUTPUT_DIR, "citations.csv")
 failed_path = os.path.join(OUTPUT_DIR, "failed.csv")
@@ -49,10 +43,7 @@ if os.path.exists(stream_path):
     except:
         pass
 
-##############################################################################
 # TEXT EXTRACTION
-##############################################################################
-
 def extract_pdf_text(path):
     text = ""
     with pdfplumber.open(path) as pdf:
@@ -68,10 +59,8 @@ def extract_html(path):
         soup = BeautifulSoup(f.read(), "html.parser")
     return soup.get_text("\n")
 
-##############################################################################
-# CHUNKING
-##############################################################################
 
+# CHUNKING
 def chunk_text(text, size=8000):
     chunks = []
     cur = ""
@@ -88,10 +77,7 @@ def chunk_text(text, size=8000):
 
     return chunks
 
-##############################################################################
 # LLM
-##############################################################################
-
 SYSTEM_PROMPT = """
 Return ONLY valid JSON.
 
@@ -133,21 +119,15 @@ def llm_call(text):
         )
     return resp.choices[0].message.content
 
-##############################################################################
-# SAFETY CLEANING (IMPORTANT FIX)
-##############################################################################
-
+# SAFETY CLEANING 
 def clean_record(r):
     # ensure compound_data is ALWAYS dict
     if not isinstance(r.get("compound_data"), dict):
         r["compound_data"] = {}
 
     return r
-
-##############################################################################
+    
 # FILE PROCESSOR
-##############################################################################
-
 def process_file(file):
     path = os.path.join(INPUT_DIR, file)
     ext = file.split(".")[-1]
@@ -158,9 +138,8 @@ def process_file(file):
         if file in processed_ids:
             return file, [], file_id
 
-        # --------------------------
+    
         # TEXT EXTRACTION
-        # --------------------------
         if ext == "pdf":
             text = extract_pdf_text(path)
         else:
@@ -182,7 +161,7 @@ def process_file(file):
 
                 for r in records:
                     r = clean_record(r)
-                    r["compound_data"] = json.dumps(r["compound_data"])  # CSV-safe
+                    r["compound_data"] = json.dumps(r["compound_data"]) 
                     results.append(r)
 
             except:
@@ -204,10 +183,7 @@ def process_file(file):
     except Exception:
         return file, [], file_id
 
-##############################################################################
 # MAIN ENGINE
-##############################################################################
-
 def main():
 
     files = os.listdir(INPUT_DIR)
@@ -237,8 +213,7 @@ def main():
                 r["study_id"] = file_id
 
                 results.append(r)
-
-                # STREAM WRITE
+                
                 pd.DataFrame([r]).to_csv(
                     stream_path,
                     mode="a",
@@ -246,9 +221,7 @@ def main():
                     index=False
                 )
 
-    # --------------------------
     # FINAL OUTPUTS
-    # --------------------------
 
     df = pd.DataFrame(results)
 
